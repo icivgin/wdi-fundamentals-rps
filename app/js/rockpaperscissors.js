@@ -59,6 +59,14 @@ function getWinner(playerMove,computerMove) {
 			winner = 'computer';
 		}
 	}
+	else if (playerMove === 'paper') {
+		if (computerMove === 'rock') {
+			winner = 'player';
+		}
+		else {
+			winner = 'computer';
+		}
+	}
     return winner;
 }
 
